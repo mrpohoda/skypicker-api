@@ -1,0 +1,115 @@
+HOST: http://www.skypicker.com/
+
+--- Skypicker ---
+---
+Welcome to the Skypicker API documentation. All comments can be written in (support [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax)
+---
+--
+Places Resources
+The following is a section of resources related to places - countries, cities, airports
+--
+List places from which you can fly.
+GET /places
+> Accept: application/json
+< 200
+< Content-Type: application/json
+{ "data": [
+    { "numberOfAirports": 1, "id": "SI", "parentId": null, "type": 1, "value": "Slovenia" },
+    { "numberOfAirports": 1, "id": "LGW", "parentId": "london", "type": 0, "value": "London Gatwick (LGW)" }
+], "count": 2
+}
+
+
+List places from which you can fly including GPS coordinates.
+GET /places?geo=1
+< 200
+< Content-Type: application/json
+[
+    { "numberOfAirports": 1, "id": "SI", "parentId": null, "type": 1, "value": "Slovenia", "lat": 50, "lng":15.432 },
+    { "numberOfAirports": 1, "id": "LGW", "parentId": "london", "type": 0, "value": "London Gatwick (LGW)", "lat":49.2323, "lng":18.991 }
+]
+
+
+Get information about particular place.
+GET /places/{id}{?geo}
+< 200
+< Content-Type: application/json
+{ "numberOfAirports": 1, "id": "SI", "parentId": null, "type": 1, "value": "Slovenia", "lat": 50.329, "lng": 15.243 }
+
+
+--
+Flights Resources
+The following is a section of resources related to flights
+--
+List flights you can book.
+GET /flights
+> Accept: application/json
+< 200
+< Content-Type: application/json
+{
+    "data": [
+        {
+            "id": "33333|44444|55555",
+            "dtime": 1355299800,
+            "atime": 1355384100,
+            "price": 29,
+            "flyfrom": "BVA",
+            "flyto": "CRL",
+            "route": [
+                {
+                    "mapIdfrom": "paris",
+                    "dtime": 1355299800,
+                    "return": "false",
+                    "cityfrom": "Paris",
+                    "atime": 1355307600,
+                    "id": "3798931",
+                    "mapIdto": "budapest",
+                    "flyto": "BUD",
+                    "airline": "FR",
+                    "cityto": "Budapest",
+                    "flyfrom": "BVA",
+                    "price": 22
+                },
+                {
+                    "mapIdfrom": "budapest",
+                    "dtime": 1355376600,
+                    "return": "false",
+                    "cityfrom": "Budapest",
+                    "atime": 1355384100,
+                    "id": "3702070",
+                    "mapIdto": "charleroi",
+                    "flyto": "CRL",
+                    "airline": "FR",
+                    "cityto": "Charleroi",
+                    "flyfrom": "BUD",
+                    "price": 6.89
+                }
+            ]
+        },
+        {
+            "id": "3232|543|1515155",
+            "dtime": 1355299800,
+            "atime": 1355307600,
+            "price": 22,
+            "flyfrom": "BVA",
+            "flyto": "BUD",
+            "route": [
+                {
+                    "mapIdfrom": "paris",
+                    "dtime": 1355299800,
+                    "return": "false",
+                    "cityfrom": "Paris",
+                    "atime": 1355307600,
+                    "id": "3798931",
+                    "mapIdto": "budapest",
+                    "flyto": "BUD",
+                    "airline": "FR",
+                    "cityto": "Budapest",
+                    "flyfrom": "BVA",
+                    "price": 22
+                }
+            ]
+        }
+    ],
+    "time": 1.58
+}
