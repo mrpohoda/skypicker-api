@@ -283,3 +283,24 @@ GET /geo
 {
     "code": "CZ"
 }
+
+
+--
+Airlines Resources
+The following is a section of resources related to airlines.
+--
+Return available airlines.
+GET /airlines
+> Accept: application/json
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "FR",
+        "name": "Ryanair"
+    },
+    {
+        "id": "U2",
+        "name": "easyJet"
+    }
+]
