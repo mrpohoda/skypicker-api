@@ -47,89 +47,239 @@ GET /flights
 < 200
 < Content-Type: application/json
 {
-    "data": [
+    "connections" : [
         {
-            "id": "33333|44444|55555",
-            "dtime": 1355299800,
-            "atime": 1355384100,
-            "price": 29,
-            "flyfrom": "BVA",
-            "flyto": "CRL",
-            "cityfrom": "Paris",
-            "cityto": "Charleroi",
-            "route": [
+            "id" : "ARN",
+            "name" : "Stockholm"
+        },
+        {
+            "id" : "BCN",
+            "name" : "Barcelona"
+        },
+        {
+            "id" : "BGY",
+            "name" : "Milan"
+        }
+    ],
+    "data" : [
+        {
+            "atime" : 1358412600,
+            "cityfrom" : "Prague",
+            "cityto" : "Budapest",
+            "dtime" : 1358335800,
+            "flyfrom" : "PRG",
+            "flyto" : "BUD",
+            "id" : "3545416|3742828",
+            "price" : 108.43232999999999,
+            "route" : [
                 {
-                    "mapIdfrom": "paris",
-                    "dtime": 1355299800,
-                    "return": "false",
-                    "cityfrom": "Paris",
-                    "atime": 1355307600,
-                    "id": "3798931",
-                    "mapIdto": "budapest",
-                    "flyto": "BUD",
-                    "airline": "FR",
-                    "cityto": "Budapest",
-                    "flyfrom": "BVA",
-                    "price": 22,
-                    "latFrom": 50.12,
-                    "lngFrom": 15.343245,
-                    "latTo": 40.754,
-                    "lngTo": 13.76553
+                    "airline" : "U2",
+                    "atime" : 1358340900,
+                    "cityfrom" : "Prague",
+                    "cityto" : "Milan",
+                    "dtime" : 1358335800,
+                    "flyfrom" : "PRG",
+                    "flyto" : "MXP",
+                    "id" : "3545416",
+                    "latFrom" : 50.100830000000002,
+                    "latTo" : 45.465449999999997,
+                    "lngFrom" : 14.26,
+                    "lngTo" : 9.1865199999999998,
+                    "mapIdfrom" : "prague",
+                    "mapIdto" : "milan",
+                    "price" : 62.43,
+                    "return" : "false"
                 },
                 {
-                    "mapIdfrom": "budapest",
-                    "dtime": 1355376600,
-                    "return": "false",
-                    "cityfrom": "Budapest",
-                    "atime": 1355384100,
-                    "id": "3702070",
-                    "mapIdto": "charleroi",
-                    "flyto": "CRL",
-                    "airline": "FR",
-                    "cityto": "Charleroi",
-                    "flyfrom": "BUD",
-                    "price": 6.89,
-                    "latFrom": 40.754,
-                    "lngFrom": 113.76553,
-                    "latTo": 45.992,
-                    "lngTo": 14.1161
+                    "airline" : "W6",
+                    "atime" : 1358412600,
+                    "cityfrom" : "Milan",
+                    "cityto" : "Budapest",
+                    "dtime" : 1358406900,
+                    "flyfrom" : "MXP",
+                    "flyto" : "BUD",
+                    "id" : "3742828",
+                    "latFrom" : 45.465449999999997,
+                    "latTo" : 47.436929999999997,
+                    "lngFrom" : 9.1865199999999998,
+                    "lngTo" : 19.255590000000002,
+                    "mapIdfrom" : "milan",
+                    "mapIdto" : "budapest",
+                    "price" : 17.989999999999998,
+                    "return" : "false"
                 }
             ]
         },
         {
-            "id": "3232|543|1515155",
-            "dtime": 1355299800,
-            "atime": 1355307600,
-            "price": 22,
-            "flyfrom": "BVA",
-            "flyto": "BUD",
-            "route": [
+            "atime" : 1358413200,
+            "cityfrom" : "Brno",
+            "cityto" : "Linz",
+            "dtime" : 1358348700,
+            "flyfrom" : "BRQ",
+            "flyto" : "LNZ",
+            "id" : "3669969|4473768",
+            "price" : 98.917330000000007,
+            "route" : [
                 {
-                    "mapIdfrom": "paris",
-                    "dtime": 1355299800,
-                    "return": "false",
-                    "cityfrom": "Paris",
-                    "atime": 1355307600,
-                    "id": "3798931",
-                    "mapIdto": "budapest",
-                    "flyto": "BUD",
-                    "airline": "FR",
-                    "cityto": "Budapest",
-                    "flyfrom": "BVA",
-                    "price": 22,
-                    "latFrom": 40.754,
-                    "lngFrom": 113.76553,
-                    "latTo": 45.992,
-                    "lngTo": 14.1161
+                    "airline" : "FR",
+                    "atime" : 1358352900,
+                    "cityfrom" : "Brno",
+                    "cityto" : "London",
+                    "dtime" : 1358348700,
+                    "flyfrom" : "BRQ",
+                    "flyto" : "STN",
+                    "id" : "3669969",
+                    "latFrom" : 49.151269999999997,
+                    "latTo" : 51.507339999999999,
+                    "lngFrom" : 16.694430000000001,
+                    "lngTo" : -0.12767999999999999,
+                    "mapIdfrom" : "brno",
+                    "mapIdto" : "london",
+                    "price" : 59.409999999999997,
+                    "return" : "false"
+                },
+                {
+                    "airline" : "FR",
+                    "atime" : 1358413200,
+                    "cityfrom" : "London",
+                    "cityto" : "Linz",
+                    "dtime" : 1358402400,
+                    "flyfrom" : "STN",
+                    "flyto" : "LNZ",
+                    "id" : "4473768",
+                    "latFrom" : 51.507339999999999,
+                    "latTo" : 48.233220000000003,
+                    "lngFrom" : -0.12767999999999999,
+                    "lngTo" : 14.18751,
+                    "mapIdfrom" : "london",
+                    "mapIdto" : "linz",
+                    "price" : 27.870000000000001,
+                    "return" : "false"
+                }
+            ]
+        },
+        {
+            "atime" : 1358352900,
+            "cityfrom" : "Brno",
+            "cityto" : "London",
+            "dtime" : 1358348700,
+            "flyfrom" : "BRQ",
+            "flyto" : "STN",
+            "id" : "3669969",
+            "price" : 67.331329999999994,
+            "route" : [ 
+                {
+                    "airline" : "FR",
+                    "atime" : 1358352900,
+                    "cityfrom" : "Brno",
+                    "cityto" : "London",
+                    "dtime" : 1358348700,
+                    "flyfrom" : "BRQ",
+                    "flyto" : "STN",
+                    "id" : "3669969",
+                    "latFrom" : 49.151269999999997,
+                    "latTo" : 51.507339999999999,
+                    "lngFrom" : 16.694430000000001,
+                    "lngTo" : -0.12767999999999999,
+                    "mapIdfrom" : "brno",
+                    "mapIdto" : "london",
+                    "price" : 59.409999999999997,
+                    "return" : "false"
+                }
+            ]
+        },
+        {
+            "atime" : 1358340900,
+            "cityfrom" : "Prague",
+            "cityto" : "Milan",
+            "dtime" : 1358335800,
+            "flyfrom" : "PRG",
+            "flyto" : "MXP",
+            "id" : "3545416",
+            "price" : 86.444559999999996,
+            "route" : [
+                {
+                    "airline" : "U2",
+                    "atime" : 1358340900,
+                    "cityfrom" : "Prague",
+                    "cityto" : "Milan",
+                    "dtime" : 1358335800,
+                    "flyfrom" : "PRG",
+                    "flyto" : "MXP",
+                    "id" : "3545416",
+                    "latFrom" : 50.100830000000002,
+                    "latTo" : 45.465449999999997,
+                    "lngFrom" : 14.26,
+                    "lngTo" : 9.1865199999999998,
+                    "mapIdfrom" : "prague",
+                    "mapIdto" : "milan",
+                    "price" : 62.43,
+                    "return" : "false"
+                }
+            ]
+        },
+        {
+            "atime" : 1358541300,
+            "cityfrom" : "Brno",
+            "cityto" : "Frankfurt",
+            "dtime" : 1358446500,
+            "flyfrom" : "BRQ",
+            "flyto" : "HHN",
+            "id" : "3669967|3694249",
+            "price" : 96.457999999999998,
+            "route" : [
+                {
+                    "airline" : "FR",
+                    "atime" : 1358450700,
+                    "cityfrom" : "Brno",
+                    "cityto" : "London",
+                    "dtime" : 1358446500,
+                    "flyfrom" : "BRQ",
+                    "flyto" : "STN",
+                    "id" : "3669967",
+                    "latFrom" : 49.151269999999997,
+                    "latTo" : 51.507339999999999,
+                    "lngFrom" : 16.694430000000001,
+                    "lngTo" : -0.12767999999999999,
+                    "mapIdfrom" : "brno",
+                    "mapIdto" : "london",
+                    "price" : 59.409999999999997,
+                    "return" : "false"
+                },
+                {
+                    "airline" : "FR",
+                    "atime" : 1358541300,
+                    "cityfrom" : "London",
+                    "cityto" : "Frankfurt",
+                    "dtime" : 1358532900,
+                    "flyfrom" : "STN",
+                    "flyto" : "HHN",
+                    "id" : "3694249",
+                    "latFrom" : 51.507339999999999,
+                    "latTo" : 50.11092,
+                    "lngFrom" : -0.12767999999999999,
+                    "lngTo" : 8.6821300000000008,
+                    "mapIdfrom" : "london",
+                    "mapIdto" : "frankfurt",
+                    "price" : 25.699999999999999,
+                    "return" : "false"
                 }
             ]
         }
     ],
-    "connections": [
-        {
-            "id": "paris",
-            "name": "Paris"
-        }
-    ]
-    "time": 1.58
+    "time" : 2.98
+}
+
+
+--
+Geo Resources
+The following is a section of resources related to geolocation.
+--
+Return default FROM country for user.
+GET /geo
+> Accept: application/json
+< 200
+< Content-Type: application/json
+{
+    "code": "CZ"
 }
