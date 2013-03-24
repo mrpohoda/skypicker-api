@@ -8,6 +8,42 @@ Welcome to the Skypicker API documentation. All comments can be written in (supp
 Places Resources
 The following is a section of resources related to places - countries, cities, airports
 --
+
+Govolo external search api
+
+Params:
+dateFrom:dd/mm/yyyy
+dateTo:dd/mm/yyyy
+from:OPO
+to:PRG
+locale:en
+
+GET /govolo
+> Accept: application/json
+< 200
+< Content-Type: application/json
+{"data": [
+    {"route" : [ {
+            "airline" : "U2",
+            "aTime" : 1358340900,
+            "cityFrom" : "Prague",
+            "cityTo" : "Milan",
+            "dTime" : 1358335800,
+            "flyFrom" : "PRG",
+            "flyTo" : "MXP",
+            "id" : "3545416",
+            "latFrom" : 50.100830000000002,
+            "latTo" : 45.465449999999997,
+            "lngFrom" : 14.26,
+            "lngTo" : 9.1865199999999998,
+            "mapIdfrom" : "prague",
+            "mapIdto" : "milan",
+            "price" : 62.43,
+            "return" : "false"
+        } ]
+    ]
+}
+
 List places from which you can fly.
 GET /places
 > Accept: application/json
