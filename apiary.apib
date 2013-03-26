@@ -23,28 +23,75 @@ GET /govolo
 > Accept: application/json
 < 200
 < Content-Type: application/json
-{"data": [
-    {"route" : [ {
-            "airline" : "U2",
-            "aTime" : 1358340900,
-            "cityFrom" : "Prague",
-            "cityTo" : "Milan",
-            "dTime" : 1358335800,
-            "flyFrom" : "PRG",
-            "flyTo" : "MXP",
-            "id" : "3545416",
-            "latFrom" : 50.100830000000002,
-            "latTo" : 45.465449999999997,
-            "lngFrom" : 14.26,
-            "lngTo" : 9.1865199999999998,
-            "mapIdfrom" : "prague",
-            "mapIdto" : "milan",
-            "price" : 62.43,
-            "return" : "false"
-        } ]
-    ]
+{
+  "data": [
+    {
+      "price": "172,00",
+      "route": [
+        {
+          "mapIdfrom": "porto",
+          "mapIdto": "frankfurt",
+          "dTime": "1365048000",
+          "latTo": 41.24805,
+          "flyTo": "OPO",
+          "return": "false",
+          "id": null,
+          "airline": "LH",
+          "lngTo": -8.68139,
+          "cityTo": "Porto",
+          "cityFrom": "Frankfurt",
+          "lngFrom": 8.68213,
+          "aTime": "1365061500",
+          "flyFrom": "FRA",
+          "price": "172,00",
+          "latFrom": 50.11092
+        },
+        {
+          "mapIdfrom": "frankfurt",
+          "mapIdto": "london",
+          "dTime": "1365071100",
+          "latTo": 50.11092,
+          "flyTo": "FRA",
+          "return": "false",
+          "id": null,
+          "airline": "LH",
+          "lngTo": 8.68213,
+          "cityTo": "Frankfurt",
+          "cityFrom": "London",
+          "lngFrom": -0.12768,
+          "aTime": "1365073500",
+          "flyFrom": "LHR",
+          "price": "172,00",
+          "latFrom": 51.50734
+        },
+        {
+          "mapIdfrom": "london",
+          "mapIdto": "porto",
+          "dTime": "1365328200",
+          "latTo": 51.50734,
+          "flyTo": "LGW",
+          "return": "true",
+          "id": null,
+          "airline": "TP",
+          "lngTo": -0.12768,
+          "cityTo": "London",
+          "cityFrom": "Porto",
+          "lngFrom": -8.68139,
+          "aTime": "1365336600",
+          "flyFrom": "OPO",
+          "price": "172,00",
+          "latFrom": 41.24805
+        }
+      ],
+      "cityTo": "Porto",
+      "cityFrom": "London",
+      "dTime": "1365048000",
+      "aTime": "1365061500",
+      "flyFrom": "LGW",
+      "id": "NaeebdOKJKDCNabbibIQw|NaeebdODCNIQCaajagIQw|CahebdVISYKJKaaddbXJw",
+      "flyTo": "OPO"
+    }]
 }
-
 List places from which you can fly.
 GET /places
 > Accept: application/json
