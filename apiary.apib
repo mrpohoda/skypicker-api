@@ -128,17 +128,21 @@ GET /places/{id}{?geo}
 --
 Flights Resources
 The following is a section of resources related to flights
+Sample call:
+http://www.skypicker.com/flights?flyFrom=PL&to=anywhere&dateFrom=06%2F09%2F2013&dateTo=06%2F10%2F2013&daysInDestinationFrom=2&daysInDestinationTo=9&onlyWeekends=1&onlyWorkingDays=1&directFlights=0&typeFlight=oneway&locale=en
 
 Params:
 dateFrom:28/11/2012
 dateTo:28/12/2012
-from:CZ
-to:anywhere
-locale:en
-typeFlight:oneway
-onlyWorkingDays:0
-onlyWeekends:1
-directFlights:0
+flyFrom:CZ                  #api code from the /places call
+to:anywhere                 #api code from the /places call
+locale:en                   #localization of the city names
+daysInDestinationFrom: 2    #for round trips, the length of stay
+daysInDestinationTo: 9
+typeFlight:oneway/round
+onlyWorkingDays:0/1
+onlyWeekends:0/1
+directFlights:0/0
 --
 List flights you can book.
 GET /flights
