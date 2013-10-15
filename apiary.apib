@@ -131,21 +131,21 @@ The following is a section of resources related to flights
 Sample call:
 http://www.skypicker.com/flights?flyFrom=PL&to=anywhere&dateFrom=06%2F09%2F2013&dateTo=06%2F10%2F2013&daysInDestinationFrom=2&daysInDestinationTo=9&onlyWeekends=1&onlyWorkingDays=1&directFlights=0&typeFlight=oneway&locale=en
 
-Params:
-flyDays[]: [0-6]                 #pick a list of days for your flight, if None, dateFrom and dateTo has to be specified </ br>
-dateFrom:28/11/2012
-dateTo:28/12/2012
-flyFrom:CZ                  #api code from the /places call
-to:anywhere                 #api code from the /places call
-locale:en                   #localization of the city names
-returnFrom: 28/12/2012      #for round trips, the return date must be specified, with days in destination, or specific daterange.
-returnTo: 28/01/2013        #if daterange is given, days in destination is ignored. If returnFrom/To is None, daysInDestination must be specified.
-daysInDestinationFrom: 2    #for round trips, the length of stay
-daysInDestinationTo: 9
-typeFlight:oneway/round
-onlyWorkingDays:0/1
-onlyWeekends:0/1
-directFlights:0/1
+Params:  <br />  
+flyDays[]: [0-6]                 #pick a list of days for your flight, if None, dateFrom and dateTo has to be specified <br />  
+dateFrom:28/11/2012              <br />  
+dateTo:28/12/2012                <br />  
+flyFrom:CZ                  #api code from the /places call              <br />  
+to:anywhere                 #api code from the /places call              <br />  
+locale:en                   #localization of the city names              <br />  
+returnFrom: 28/12/2012      #for round trips, the return date must be specified, with days in destination, or specific daterange.        <br />  
+returnTo: 28/01/2013        #if daterange is given, days in destination is ignored. If returnFrom/To is None, daysInDestination must be specified.       <br />  
+daysInDestinationFrom: 2    #for round trips, the length of stay             <br />  
+daysInDestinationTo: 9               <br />  
+typeFlight:oneway/round              <br />  
+onlyWorkingDays:0/1                  <br />  
+onlyWeekends:0/1                     <br />  
+directFlights:0/1                    <br />  
 overnight: 0/1              #default 1, if 0, for leg flights, all the flights are on the same day
 --
 List flights you can book.
