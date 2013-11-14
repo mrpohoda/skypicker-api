@@ -30,25 +30,25 @@ GET /govolo
 {
   "data": [
     {
-      "price": "172,00",
+      "price": "172,00",                        #total price of the trip
       "route": [
         {
-          "mapIdfrom": "porto",
-          "mapIdto": "frankfurt",
-          "dTime": "1365048000",
-          "latTo": 41.24805,
-          "flyTo": "OPO",
-          "return": "false",
-          "id": null,
-          "airline": "LH",
-          "lngTo": -8.68139,
-          "cityTo": "Porto",
-          "cityFrom": "Frankfurt",
-          "lngFrom": 8.68213,
-          "aTime": "1365061500",
-          "flyFrom": "FRA",
-          "price": "172,00",
-          "latFrom": 50.11092
+          "mapIdfrom": "porto",                 #api id of the city (lowercase city name)
+          "mapIdto": "frankfurt",               #api id of the city (lowercase city name)
+          "dTime": "1365048000",                #unix timestamp of the departure date
+          "latTo": 41.24805,                    #geo lat of the destination airport
+          "flyTo": "OPO",                       #iata code of destination airport
+          "return": "false",                    #true if the flight is a returning flight
+          "id": null,                           #skypicker id of the flight
+          "airline": "LH",                      #airline iata code
+          "lngTo": -8.68139,                    #geo long of the dest airport
+          "cityTo": "Porto",                    #name of the destination city
+          "cityFrom": "Frankfurt",              #name of the source city
+          "lngFrom": 8.68213,                   #geo long of source city
+          "aTime": "1365061500",                #arrival time timestamp
+          "flyFrom": "FRA",                     #iata code of source airport
+          "price": "172,00",                    #price of the flight
+          "latFrom": 50.11092                   #geo lat of the source city
         },
         {
           "mapIdfrom": "frankfurt",
@@ -87,13 +87,13 @@ GET /govolo
           "latFrom": 41.24805
         }
       ],
-      "cityTo": "Porto",
-      "cityFrom": "London",
-      "dTime": "1365048000",
-      "aTime": "1365061500",
-      "flyFrom": "LGW",
-      "id": "NaeebdOKJKDCNabbibIQw|NaeebdODCNIQCaajagIQw|CahebdVISYKJKaaddbXJw",
-      "flyTo": "OPO"
+      "cityTo": "Porto",                # dest city of the whole trip
+      "cityFrom": "London",             #source city of the whole trip
+      "dTime": "1365048000",            # timestamp of departure of whole trip
+      "aTime": "1365061500",            # timestamp of arrival of whole trip
+      "flyFrom": "LGW",                 #iata source
+      "id": "NaeebdOKJKDCNabbibIQw|NaeebdODCNIQCaajagIQw|CahebdVISYKJKaaddbXJw",        #skypicker id of the flights combinations
+      "flyTo": "OPO"                    #iata dest
     }]
 }
 List places from which you can fly.
